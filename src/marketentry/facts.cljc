@@ -11,13 +11,7 @@
           :rep-provenance "https://www.goszakup.gov.kz/"
           :corporate-number-owner-authority "Ministry of Justice / SRC"
           :corporate-number-legal-basis "BIN (business identification number)"
-          :corporate-number-provenance "https://egov.kz/"}
-   "USA" {:name "United States" :owner-authority "GSA/SAM.gov" :legal-basis "FAR" :national-spec "SAM.gov" :provenance "https://sam.gov/"
-          :required-evidence ["EIN record" "SAM.gov registration record" "State business registration record" "SAM UEI verification record"]}
-   "RUS" {:name "Russian Federation" :owner-authority "EIS" :legal-basis "44-FZ" :national-spec "EIS" :provenance "https://zakupki.gov.ru/"
-          :required-evidence ["INN/OGRN record" "EIS registration" "EGRUL extract" "Authorized-representative record"]}
-   "CHN" {:name "China" :owner-authority "CCGP" :legal-basis "GPL" :national-spec "CCGP" :provenance "http://www.ccgp.gov.cn/"
-          :required-evidence ["USCC record" "CCGP registration" "Business license" "Authorized-representative record"]}})
+          :corporate-number-provenance "https://egov.kz/"}})
 
 (defn spec-basis [iso3] (get catalog iso3))
 (defn coverage
